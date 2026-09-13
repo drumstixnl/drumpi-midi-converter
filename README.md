@@ -2,7 +2,7 @@
 A Python script that converts Drumpi midi recordings into usable midi files, ready to import into your DAW.
 
 ## Why
-[[Drumpi|https://www.drumpi.com]] is a great piece of software that turns your e-drum into a great sounding drumkit.  
+[Drumpi](https://www.drumpi.com) is a great piece of software that turns your e-drum into a great sounding drumkit.  
 It can record your performance both in audio as well as in midi. There is an issue with the midi file though. And that caused issues with my DAW of choice (Ableton Live).  
 
 ### Issue 1
@@ -14,6 +14,16 @@ But DAWs do use a set tempo. Also, the SMPTE setting of Drumpi seems not to be a
 
 ## Fix
 This Python scripts tries to fix these issues. Download your midi recording from Drumpi, run it through this script and import the resulting midi file. The script assumes that Drumpi uses 44100 ticks per second. Which comes close to my measurements. It also makes sense because 44100Hz is the samplerate of Drumpi. I don't know if this value is actually correct. But it works.
+
+## Installation
+This script requires python3 and the mido package.  
+
+Install the required Python package if you haven't already:
+```bash
+python3 -m pip install mido
+```
+
+Download this script and run it in the terminal (macOS, linux) or in command prompt (Windows).
 
 ## Usage
 ```bash
